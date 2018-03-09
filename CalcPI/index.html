@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculating PI</title>
+	<style type="text/css">
+		.container {
+			padding: 30px 0;
+			border-bottom: solid 2px gray;
+		}
+		.container:last-of-type {
+			border-bottom: transparent;
+		}
+		#loop-limit {
+			border: solid 1px black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculating PI</h1>
+	<div class="container">
+		<h2>Gregory-Leibniz series</h2>
+		<p>This method uses the famous method from the famous mathematician.</p>
+		<!-- <input type="number" id="loop-limit" value="1300"></input> -->
+		<button data-calctype="leib" class="calcBTN2">run calculation</button>
+		<p class="calctype-leib"></p>
+	</div>
+	<div class="container">
+		<h2>Simple Method</h2>
+		<p>This method simply divides 22 by 7.</p>
+		<button data-calctype="simple" class="calcBTN">run calculation</button>
+		<p class="calctype-simple"></p>
+	</div>
+	<div class="container">
+		<h2>Super Simple Method</h2>
+		<p>This simply uses the Math.PI method.</p>
+		<button data-calctype="super-simple" class="calcBTN">run calculation</button>
+		<p class="calctype-super-simple"></p>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
